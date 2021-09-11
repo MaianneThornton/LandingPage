@@ -80,15 +80,15 @@ body {
 
 #inner a {
   position: relative;
-  right: 65%;
-  left: 35%;
+  right: 64%;
+  left: 36%;
 }
 
 @media (orientation: portrait) {
   #inner a {
     font-size: 3vw;
-    right: 80%;
-    left: 20%;
+    right: 82%;
+    left: 18%;
   }
 }
 
