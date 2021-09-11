@@ -12,8 +12,6 @@ body {
 
 #main a {
   color: #485681;
-  border: 5px solid #485681;
-  border-radius: 25px;
   padding: 10px;
   background-color: thistle;
   font-weight: 700;
@@ -22,7 +20,6 @@ body {
 #main a:hover {
   color: white;
   border-color: white;
-  letter-spacing: 5px;
   background-color: #485681;
 }
 
@@ -61,7 +58,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
-  height: 93vh;
+  height: 86vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,6 +70,11 @@ body {
           align-items: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+}
+
+#outer a {
+  border: 5px solid #485681;
+  border-radius: 25px;
 }
 
 #inner a {
@@ -109,7 +111,17 @@ body {
   }
 }
 
-h6 {
+#footer {
   background-color: thistle;
+  border: 1px solid #485681;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+}
+
+@media (orientation: portrait) {
+  #footer {
+    font-size: 2vw;
+  }
 }
 /*# sourceMappingURL=main.css.map */
