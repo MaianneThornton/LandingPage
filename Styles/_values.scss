@@ -1,10 +1,10 @@
-@mixin flex ($justify, $align, $wrap) {
+@mixin flex($justify, $align, $wrap) {
   display: flex;
   justify-content: $justify;
   align-items: $align;
   flex-wrap: $wrap;
 }
-@mixin grid ($start, $end) {
+@mixin grid($start, $end) {
   display: grid;
   grid-column-start: $start;
   grid-column-end: $end;
@@ -17,5 +17,5 @@ $bg_color: thistle;
 %head {
   text-align: center;
   font-size: 75px;
-  color: $highlight_color
+  color: $highlight_color;
 }
