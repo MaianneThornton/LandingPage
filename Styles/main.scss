@@ -7,6 +7,7 @@
 body {
   font-family: 'Glory', sans-serif;
   margin: 0;
+  background-color: $bg_color;
 }
 
 #main {
@@ -47,7 +48,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
-    height: 86vh;
+    height: 90vh;
     @include flex (center, center, nowrap);
     a {
       border: 5px solid $main_color;
@@ -57,8 +58,8 @@ body {
   #inner {
     a{
       position: relative;
-      right: 50%;
-      left: 40%;
+      right: 65%;
+      left: 35%;
       @media (orientation:portrait) {
         font-size: 3vw;
         right: 80%;
@@ -84,8 +85,9 @@ body {
 }
 
 #footer {
+  font-size: 10px;
   background-color: $bg_color;
-  border: 1px solid $main_color;
+  border: 1px solid $bg_color;
   @media (orientation:portrait) {
     font-size: 2vw;
 }
