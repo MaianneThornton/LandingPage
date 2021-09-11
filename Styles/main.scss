@@ -1,1 +1,86 @@
-@import "values"
+@import "values";
+
+// Google Font
+@import url('https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,400;0,700;1,400&display=swap');
+// font-family: 'Glory', sans-serif;
+
+body {
+  font-family: 'Glory', sans-serif;
+  margin: 0;
+}
+
+#main {
+  a {
+    color: $main_color;
+    border: 5px solid $main_color;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: $bg_color;
+    font-weight: 700;
+    &:hover {
+      color: $highlight_color;
+      border-color: $highlight_color;
+      letter-spacing: 5px;
+      background-color:$main_color;
+    }
+}
+
+  // Nav Bar
+  #nav {
+    @media (orientation:portrait) {
+      font-size: 3vw;
+    }
+    @include flex (flex-start, center, nowrap);
+    background-color: $bg_color;
+    align-self: auto;
+    font-weight: 700;
+    font-size: 20px;
+    position: sticky;
+    top:0;
+    }
+  }
+  
+  #outer {
+    background-image: url(https://images.unsplash.com/photo-1524799744590-dd8442863563?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1502&q=80);
+    background-color: $highlight_color;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 93vh;
+    @include flex (center, center, nowrap);
+  }
+  #inner {
+    a{
+      position: relative;
+      right: 50%;
+      left: 40%;
+      @media (orientation:portrait) {
+        font-size: 3vw;
+        right: 80%;
+        left: 20%;
+      }
+    }
+  }
+
+  #future {
+    @extend %head;
+    text-shadow: 2px 2px $main_color;
+    @media (orientation:portrait) {
+      font-size: 7vw;
+    }
+  }
+
+#here{
+  @extend %head;
+    text-shadow: 2px 2px $main_color;
+    @media (orientation:portrait) {
+      font-size: 7vw;
+      
+    }
+}
+
+h6 {
+  background-color: $bg_color;
+}
+

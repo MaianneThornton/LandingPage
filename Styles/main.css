@@ -1,1 +1,115 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,400;0,700;1,400&display=swap");
+#future, #here {
+  text-align: center;
+  font-size: 75px;
+  color: white;
+}
+
+body {
+  font-family: 'Glory', sans-serif;
+  margin: 0;
+}
+
+#main a {
+  color: #485681;
+  border: 5px solid #485681;
+  border-radius: 25px;
+  padding: 10px;
+  background-color: thistle;
+  font-weight: 700;
+}
+
+#main a:hover {
+  color: white;
+  border-color: white;
+  letter-spacing: 5px;
+  background-color: #485681;
+}
+
+#main #nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background-color: thistle;
+  -ms-flex-item-align: auto;
+      align-self: auto;
+  font-weight: 700;
+  font-size: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+@media (orientation: portrait) {
+  #main #nav {
+    font-size: 3vw;
+  }
+}
+
+#outer {
+  background-image: url(https://images.unsplash.com/photo-1524799744590-dd8442863563?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1502&q=80);
+  background-color: white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 93vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+#inner a {
+  position: relative;
+  right: 50%;
+  left: 40%;
+}
+
+@media (orientation: portrait) {
+  #inner a {
+    font-size: 3vw;
+    right: 80%;
+    left: 20%;
+  }
+}
+
+#future {
+  text-shadow: 2px 2px #485681;
+}
+
+@media (orientation: portrait) {
+  #future {
+    font-size: 7vw;
+  }
+}
+
+#here {
+  text-shadow: 2px 2px #485681;
+}
+
+@media (orientation: portrait) {
+  #here {
+    font-size: 7vw;
+  }
+}
+
+h6 {
+  background-color: thistle;
+}
+/*# sourceMappingURL=main.css.map */
