@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,400;0,700;1,400&display=swap");
-.container-fluid #future, .container-fluid #here {
+#future, #here {
   text-align: center;
   font-size: 75px;
   color: white;
@@ -42,14 +42,15 @@ Body {
 
 .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
   color: white;
+  font-weight: 700;
 }
 
-.container-fluid .navbar {
+.navbar {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.container-fluid #showcase {
+#showcase {
   background-image: url(https://images.unsplash.com/photo-1524799744590-dd8442863563?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1502&q=80);
   background-color: white;
   background-position: center;
@@ -70,7 +71,7 @@ Body {
       flex-wrap: nowrap;
 }
 
-.container-fluid #showcase a {
+#showcase a {
   border: 5px solid #485681;
   border-radius: 25px;
   background-color: thistle;
@@ -80,52 +81,53 @@ Body {
   padding: 10px;
 }
 
-.container-fluid #showcase a:hover {
+#showcase a:hover {
   color: white;
   background-color: #485681;
   border-color: white;
 }
 
-.container-fluid #inner a {
+#inner a {
   position: relative;
   right: 63%;
   left: 37%;
 }
 
 @media (orientation: portrait) {
-  .container-fluid #inner a {
+  #inner a {
     font-size: 3vw;
     right: 82%;
     left: 18%;
   }
 }
 
-.container-fluid #future {
+#future {
   text-shadow: 2px 2px #485681;
 }
 
 @media (orientation: portrait) {
-  .container-fluid #future {
+  #future {
     font-size: 7vw;
   }
 }
 
-.container-fluid #here {
+#here {
   text-shadow: 2px 2px #485681;
 }
 
 @media (orientation: portrait) {
-  .container-fluid #here {
+  #here {
     font-size: 7vw;
   }
 }
 
-.container-fluid #footer {
+#footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -135,24 +137,37 @@ Body {
   border-top: 5px solid #485681;
 }
 
-.container-fluid #footer #logo {
+#footer p {
+  font-size: 15px;
+}
+
+#footer #logo {
   width: 100px;
 }
 
-.container-fluid #footer .fa {
+#footer .fa {
   font-size: 25px;
 }
 
-.container-fluid #footer li {
+#footer li {
   list-style: none;
 }
 
-.container-fluid #footer a {
+#footer a {
   color: #485681;
 }
 
-.container-fluid #footer a:hover {
+#footer a:hover {
   color: white;
   border-color: white;
+}
+
+@media (orientation: landscape) and (max-height: 360px) {
+  body {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 /*# sourceMappingURL=main.css.map */
