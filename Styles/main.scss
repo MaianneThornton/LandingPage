@@ -36,8 +36,6 @@ body {
     align-self: auto;
     font-weight: 700;
     font-size: 20px;
-    position: sticky;
-    top: 0;
   }
 }
 
@@ -54,6 +52,10 @@ body {
   a {
     border: 5px solid $main_color;
     border-radius: 25px;
+    &:hover {
+      background-color: $main_color;
+      color: $highlight_color;
+    }
   }
 }
 #inner {
@@ -87,12 +89,30 @@ body {
 
 // footer
 #footer {
-  font-size: 10px;
+  display: flex;
+  height: 75px;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 15px;
   background-color: $bg_color;
   border: 1px solid $bg_color;
+  padding: 0;
+  margin: 0;
   @media (orientation: portrait) {
     font-size: 2vw;
   }
-  position: sticky;
-  bottom: 0;
+  
+  img {
+    height: 85px;
+  }
+  .fab {
+    font-size: 20px;
+    color: $main_color;
+    &:hover {
+      color: $highlight_color;
+  }
+  }
 }
+
+// Media Queries
+
