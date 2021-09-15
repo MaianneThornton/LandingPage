@@ -74,6 +74,8 @@ Body {
 
 #showcase a:hover {
   color: white;
+  background-color: #485681;
+  border-color: white;
 }
 
 #inner a {
@@ -144,6 +146,5 @@ Body {
 #footer a:hover {
   color: white;
   border-color: white;
-  background-color: #485681;
 }
 /*# sourceMappingURL=main.css.map */

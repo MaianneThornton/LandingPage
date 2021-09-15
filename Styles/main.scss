@@ -60,6 +60,8 @@ background-color: $bg_color;
       padding: 10px;
       &:hover {
         color: $highlight_color;
+        background-color: $main_color;
+        border-color: $highlight_color;
       }  
     }
   }
@@ -119,7 +121,6 @@ background-color: $bg_color;
       &:hover {
       color: $highlight_color;
       border-color: $highlight_color;
-      background-color: $main_color;
       }
     }
   }
