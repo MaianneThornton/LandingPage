@@ -24,6 +24,9 @@ background-color: $bg_color;
     margin-right: 5px;
     border-bottom: 5px solid $main_color;
     padding: 10px;
+    &:hover {
+      color: $highlight_color;
+    }
   }
   
   .navbar-collapse {
@@ -33,6 +36,8 @@ background-color: $bg_color;
    }
    .navbar-collapse .navbar-nav .nav-item .nav-link {
      color: $bg_color;
+     &:hover {
+      color: $highlight_color;
    }
   }
   .navbar{
@@ -124,3 +129,4 @@ background-color: $bg_color;
       }
     }
   }
+}
