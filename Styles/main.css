@@ -2,7 +2,7 @@
 #future, #here {
   text-align: center;
   font-size: 75px;
-  color: white;
+  color: thistle;
 }
 
 Body {
@@ -53,6 +53,7 @@ Body {
 #showcase {
   background-image: url(https://images.pexels.com/photos/3278643/pexels-photo-3278643.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   background-color: white;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
@@ -101,7 +102,7 @@ Body {
 }
 
 #future {
-  text-shadow: 2px 2px #485681;
+  text-shadow: 4px 4px #485681;
 }
 
 @media (orientation: portrait) {

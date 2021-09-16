@@ -51,7 +51,7 @@ background-color: $bg_color;
     // background-image: url(https://images.unsplash.com/photo-1524799744590-dd8442863563?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1502&q=80);
     background-image: url(https://images.pexels.com/photos/3278643/pexels-photo-3278643.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
     background-color: $highlight_color;
-    // background-position: center;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
@@ -87,7 +87,7 @@ background-color: $bg_color;
   
   #future {
     @extend %head;
-    text-shadow: 2px 2px $main_color;
+    text-shadow: 4px 4px $main_color;
     @media (orientation: portrait) {
       font-size: 7vw;
     }
