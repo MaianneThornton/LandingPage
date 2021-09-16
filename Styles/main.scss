@@ -95,7 +95,7 @@ background-color: $bg_color;
   
   #here {
     @extend %head;
-    text-shadow: 2px 2px $main_color;
+    text-shadow: 4px 4px $main_color;
     @media (orientation: portrait) {
       font-size: 7vw;
     }
