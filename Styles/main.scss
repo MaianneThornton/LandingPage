@@ -48,9 +48,10 @@ background-color: $bg_color;
 
   // Showcase
   #showcase {
-    background-image: url(https://images.unsplash.com/photo-1524799744590-dd8442863563?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1502&q=80);
+    // background-image: url(https://images.unsplash.com/photo-1524799744590-dd8442863563?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1502&q=80);
+    background-image: url(https://images.pexels.com/photos/3278643/pexels-photo-3278643.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
     background-color: $highlight_color;
-    background-position: center;
+    // background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
