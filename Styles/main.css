@@ -6,7 +6,7 @@
 }
 
 Body {
-  font-family: 'Glory', sans-serif;
+  font-family: "Glory", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -72,12 +72,6 @@ Body {
   color: #485681;
   border-color: #485681;
   border-width: 3px;
-}
-
-#inner a {
-  position: relative;
-  right: 63%;
-  left: 37%;
 }
 
 #future {
