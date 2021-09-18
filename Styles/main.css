@@ -30,17 +30,17 @@ Body {
   color: white;
 }
 
-.container-fluid .navbar-collapse {
+.navbar-collapse {
   background-color: #485681;
   border-bottom: 5px solid thistle;
   padding: 2px;
 }
 
-.container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
+.navbar-collapse .navbar-nav .nav-item .nav-link {
   color: thistle;
 }
 
-.container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+.navbar-collapse .navbar-nav .nav-item .nav-link:hover {
   color: white;
   font-weight: 700;
 }
@@ -93,32 +93,12 @@ Body {
   left: 37%;
 }
 
-@media (orientation: portrait) {
-  #inner a {
-    font-size: 3vw;
-    right: 82%;
-    left: 18%;
-  }
-}
-
 #future {
   text-shadow: 4px 4px #485681;
 }
 
-@media (orientation: portrait) {
-  #future {
-    font-size: 7vw;
-  }
-}
-
 #here {
-  text-shadow: 2px 2px #485681;
-}
-
-@media (orientation: portrait) {
-  #here {
-    font-size: 7vw;
-  }
+  text-shadow: 4px 4px #485681;
 }
 
 #footer {
@@ -168,6 +148,37 @@ Body {
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+}
+
+@media (orientation: portrait) {
+  #here {
+    font-size: 7vw;
+  }
+}
+
+@media (orientation: portrait) {
+  #inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style: none;
+    font-size: 3vw;
+  }
+}
+
+@media (orientation: portrait) {
+  #future {
+    font-size: 7vw;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -27,7 +27,7 @@ background-color: $bg_color;
       color: $highlight_color;
     }
   }
-  
+}
   .navbar-collapse {
     background-color: $main_color;
     border-bottom: 5px solid $bg_color;
@@ -40,7 +40,7 @@ background-color: $bg_color;
       font-weight: 700;
     }
    }
-  }
+  
   .navbar{
     margin-top: 0;
     margin-bottom: 0;
@@ -77,70 +77,91 @@ background-color: $bg_color;
       position: relative;
       right: 63%;
       left: 37%;
-      @media (orientation: portrait) {
-        font-size: 3vw;
-        right: 82%;
-        left: 18%;
-      }
     }
   }
+
+
+#future {
+  @extend %head;
+  text-shadow: 4px 4px $main_color;
+}
+
+#here {
+  @extend %head;
+  text-shadow: 4px 4px $main_color;
+} 
+
+// Footer
+#footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+  background-color: $bg_color;
+  margin-bottom: 0;
+  border-top: 5px solid $main_color;
   
-  #future {
-    @extend %head;
-    text-shadow: 4px 4px $main_color;
-    @media (orientation: portrait) {
-      font-size: 7vw;
-    }
+  p {
+    font-size: 15px;
+  }
+  #logo {
+    width: 100px;
   }
   
-  #here {
-    @extend %head;
-    text-shadow: 4px 4px $main_color;
-    @media (orientation: portrait) {
-      font-size: 7vw;
-    }
-  } 
+  .fa {
+    font-size: 25px;
+  }
   
-  // Footer
-  #footer {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100px;
-    background-color: $bg_color;
-    margin-bottom: 0;
-    border-top: 5px solid $main_color;
-
-    p {
-      font-size: 15px;
-    }
-    #logo {
-      width: 100px;
-    }
-    
-    .fa {
-      font-size: 25px;
-    }
-
-    li {
-      list-style: none;
-    }
-
-    a {
-      color: $main_color;
-      &:hover {
+  li {
+    list-style: none;
+  }
+  
+  a {
+    color: $main_color;
+    &:hover {
       color: $highlight_color;
       border-color: $highlight_color;
-      }
     }
   }
+}
 
 
-  // Media Queries
-  @media (orientation: landscape) and (max-height: 360px) {
-    body {
-      display: grid;
-      grid-template-columns: 1fr;
-    }
+// Media Queries
+@media (orientation: landscape) and (max-height: 360px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
   }
-  
+}
+
+#here {
+  @media (orientation: portrait) {
+    font-size: 7vw;
+    
+  }
+}
+
+#inner {
+  @media (orientation: portrait) {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: 3vw;
+    // right: 82%;
+    // left: 18%;
+  }
+}
+
+#future {
+@media (orientation: portrait) {
+  font-size: 7vw;
+  }
+}
+
+#portfolio {
+  @media (orientation: portrait) {
+    
+  }
+}
