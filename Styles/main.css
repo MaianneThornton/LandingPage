@@ -123,43 +123,28 @@ Body {
   border-color: white;
 }
 
-@media (orientation: landscape) and (max-height: 360px) {
-  body {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-}
-
-@media (orientation: portrait) {
-  #here {
-    font-size: 7vw;
-  }
-}
-
-@media (orientation: portrait) {
-  #inner {
+@media (max-width: 768px) {
+  #showcase {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    list-style: none;
-    font-size: 3vw;
+    height: 87vh;
   }
-}
-
-@media (orientation: portrait) {
   #future {
-    font-size: 7vw;
+    font-size: 10vw;
+    font-weight: 700;
+    color: #485681;
+    text-shadow: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

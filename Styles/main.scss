@@ -70,13 +70,6 @@ Body {
     }
   }
 }
-// #inner {
-//   a {
-//     position: relative;
-//     right: 63%;
-//     left: 37%;
-//   }
-// }
 
 #future {
   @extend %head;
@@ -123,39 +116,26 @@ Body {
 }
 
 // Media Queries
-@media (orientation: landscape) and (max-height: 360px) {
-  body {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-}
-
-#here {
-  @media (orientation: portrait) {
-    font-size: 7vw;
-  }
-}
-
-#inner {
-  @media (orientation: portrait) {
+@media (max-width: 768px) {
+  #showcase{
+    display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    list-style: none;
-    font-size: 3vw;
-    // right: 82%;
-    // left: 18%;
+    height: 87vh;
+  }
+  #future {
+    font-size: 10vw;
+    font-weight: 700;
+    color: $main_color;
+    text-shadow: none;
   }
 }
 
-#future {
-  @media (orientation: portrait) {
-    font-size: 7vw;
-  }
-}
 
-#portfolio {
-  @media (orientation: portrait) {
-  }
-}
+
+
+
+
+
+
